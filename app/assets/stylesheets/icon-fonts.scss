@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'mwitek-icons';
+  src: url('mwitek-icons.eot');
+  src: url('mwitek-icons.eot#iefix') format('embedded-opentype'),
+       url('mwitek-icons.woff') format('woff'),
+       url('mwitek-icons.ttf') format('truetype'),
+       url('mwitek-icons.svg#mwitek-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block;
+  font-family: "mwitek-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-mwitek-logo:before {
+  content: '\e800';
+}
