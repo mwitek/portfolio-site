@@ -1,3 +1,5 @@
 class HomeController < ApplicationController
-  def show;end
+  def show
+    @projects = Project.all.map { |p| ProjectPresenter.new(p) }
+  end
 end
