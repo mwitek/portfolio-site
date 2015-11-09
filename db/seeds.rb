@@ -1,16 +1,16 @@
 projects = [
   {
     name: "Funzing web application",
-    description: "I worked on the MVP application and was responsible for
-                  implementing the entire front end.",
+    description: "I worked on the MVP release and added
+                  the entire application front end.",
     url: "http://www.funzing.com/",
     position: 0
   },
   {
     name: "Shoptagr web application",
-    description: "I worked on the original MVP application. I built out the entire
-                  front end and helped develop a bookmarklet that would allow
-                  registered users to save items to their shoptagr account.",
+    description: "I worked on the original MVP release. Added the front end and
+                  a bookmarklet to allow users to save items to their shoptagr
+                  account.",
     url: "http://www.shoptagr.com/",
     position: 0
   },
@@ -22,19 +22,18 @@ projects = [
     position: 0
   },
   {
-    name: "Bespoke Offers web application",
-    description: "I worked on various features within a very complex, monolithic rails app.
-                  Features ranging from the client side angular shopping basket
-                  to encrypting and archiving files via background jobs.",
+    name: "Bespoke Offers",
+    description: "I worked on various features ranging from the client side angular
+                  shopping basket to encrypting and archiving files via background
+                  jobs.",
     url: "https://www.bespokeoffers.co.uk/",
     position: 0
   },
   {
-    name: "bPay e-commerce web application",
-    description: "I worked with a small distributed and we created an e-commerce
-                  web application in a very short amount of time. My responsibilities
-                  ranged from database tuning to consumer facing front end components
-                  such as the zoomable product image viewer.",
+    name: "bPay store front",
+    description: "I worked on various features ranging from database tuning to
+                  front end components such as the zoomable product
+                  image viewer.",
     url: "https://www.shop.bpay.co.uk/",
     position: 0
   },
@@ -48,14 +47,14 @@ projects = [
   },
   {
     name: "Name The Station Game",
-    description: "I worked with a team to create a slot machine style promotion
-                  game for the Northern Rail. I was responsible for the game mechanics,
-                  win/loss algorithm, data capturing and the prize notification system.",
+    description: "A slot machine style game for the Northern Rail.
+                  I added the game mechanics, win/loss algorithm,
+                  data capturing and the prize notification system.",
     url: "",
     position: 0
   },
   {
-    name: "Love Pleasure e-commerce web application",
+    name: "Love Pleasure",
     description: "I created a product csv import service which allowed the admin
                   to create spree commerce products in bulk with ease",
     url: "",
@@ -69,14 +68,14 @@ projects = [
     position: 0
   },
   {
-    name: "Rework web application",
+    name: "Rework",
     description: "I've implemented various software features across the entire stack.
                   Most recently I converted the entire app from mongoDB to Postgres.",
     url: "https://re-work.co/",
     position: 0
   },
   {
-    name: "Business Print Express web application",
+    name: "Business Print Express",
     description: "I worked on various front end features, mostly css.",
     url: "http://www.businessprintexpress.com/",
     position: 0
@@ -98,7 +97,7 @@ projects = [
     position: 0
   },
   {
-    name: "Leader Corporation website",
+    name: "Leader Corporation",
     description: "I was responsible for all design and development.
                   This website was built as a wordpress theme to be used with
                   the wordpress content management system." ,
@@ -133,20 +132,20 @@ projects = [
     position: 0
   },
   {
-    name: "CodeTriage web application",
+    name: "CodeTriage",
     description: "I added a javascript testing framework and cleaned up globally
                   bound js events.",
     url: "https://github.com/codetriage/codetriage/commits/master?author=mwitek",
     position: 0
   },
   {
-    name: "jQuery - EzRandomImageRotator",
+    name: "jQuery - Image Rotator",
     description: "A jQuery plugin for rotating images in random order",
     url: "https://github.com/mwitek/jQuery-ezRandomImageRotator/commits/master?author=mwitek",
     position: 0
   },
   {
-    name: "jQuery - touchHoverToLink",
+    name: "jQuery - Touch Hover Link",
     description: "A jQuery plugin to handle touch events on a dropdown menus top level link",
     url: "https://github.com/red-green-refactor/touch-hover-to-link/commits/master?author=mwitek",
     position: 0

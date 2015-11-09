@@ -2,7 +2,7 @@
   %h2.panel__heading.text-center Projects I've Worked On
   .row.project-gallery
     - @projects.each do |project|
-      .columns.medium-4
+      .columns.medium-6.large-4
         %figure.project-gallery__item
           = image_tag project.image_url, class: 'project-gallery__image'
           %figcaption.project-gallery__item-overlay-panel

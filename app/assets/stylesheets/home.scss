@@ -76,7 +76,7 @@
 .project-gallery__image {
   display: block;
   min-height: 100%;
-  max-width: 100%;
+  max-width: 101%;
   position: relative;
   transition: opacity 0.35s;
 }
@@ -84,15 +84,21 @@
 .project-gallery__item-overlay-panel {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  color: #fff;
+  background: #fff;
+  bottom: 0;
+  color: #3c4a50;
+  height: 3.75rem;
   font-size: 1.25rem;
-  height: 100%;
   left: 0;
-  padding: 2rem;
+  padding: 1rem;
   position: absolute;
   text-transform: uppercase;
-  top: 0;
+  top: auto;
   width: 100%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
 
   &::before,
   &::after {
@@ -112,7 +118,9 @@
 }
 
 .project-gallery__item {
-  background: #85181c;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid darken(#F9F5F1, 5%);
   cursor: pointer;
   float: left;
   margin: 0;
@@ -121,6 +129,7 @@
   text-align: center;
 
   &:hover {
+    background: #85181c;
     .project-gallery__image {
       opacity: 0.1
     }
@@ -136,7 +145,8 @@
 
     .project-gallery__item-overlay-panel,
     .project-gallery__item-heading{
-      -webkit-transform: translate3d(0,0,0);
+      border: none;
+      -webkit-transform: translate3d(-1px,0,0);
       transform: translate3d(0,0,0);
     }
   }
@@ -147,7 +157,7 @@
   color: #fff;
   font-size: 1rem;
   opacity: 0;
-  padding: 3rem 2rem 4.5rem 1rem;
+  padding: 1rem;
   position: absolute;
   text-shadow: 0px 0px 5px rgb(95, 21, 25);
   text-transform: none;
@@ -156,22 +166,10 @@
   transition: opacity 0.35s;
 }
 
-.project-gallery__item-overlay-panel {
-  background: #fff;
-  bottom: 0;
-  color: #3c4a50;
-  height: 3.75rem;
-  padding: 1rem;
-  top: auto;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
-
-.project-gallery__item-heading{
+.project-gallery__item-heading {
   font-family: 'Roboto Slab';
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0,200%,0);
@@ -182,6 +180,7 @@
   padding-bottom: 0.5rem;
   border-bottom: 1px dashed darken(#F9F5F1, 10%);
   margin-bottom: 1.5rem;
+
   &:last-child {
     border-bottom: none;
   }
