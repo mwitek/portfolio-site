@@ -47,5 +47,8 @@ $(document).ready(function(){
     $(".server-status-message").html("<span class='success'>Message sent, thanks for reaching out.</span>")
   }).on("ajax:error", function(e, xhr, status, error){
     $(".server-status-message").html('<span class="error">'+xhr.responseText+'</span>')
-  })
+  });
+  $('a[href="#no-url-available"]').on('click', function(e){
+    e.preventDefault()
+  });
 })
