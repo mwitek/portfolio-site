@@ -11,6 +11,7 @@ gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'
 gem 'foundation-rails'
 gem 'almost-flat-ui-rails'
 gem 'email_validator'
+gem 'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'

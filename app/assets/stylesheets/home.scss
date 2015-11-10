@@ -185,3 +185,54 @@
     border-bottom: none;
   }
 }
+
+.new_inquiry {
+  margin-bottom: 6rem;
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  input[type='text'],
+  textarea {
+    border: 1px solid darken(#F9F5F1, 10%);
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  textarea {
+    height: 15rem;
+    resize: none;
+  }
+
+  .button {
+    padding: 1rem 4rem;
+  }
+}
+
+.social-links {
+  a {
+    color: darken(#F9F5F1, 25%);
+    font-size: 4rem;
+    opacity: 0.65;
+    transition: opacity 0.35s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  span {
+    margin: 0 0.25rem;
+  }
+}
+
+.server-status-message {
+  .success {
+    color: $success-color;
+  }
+
+  .error {
+    color: $warning-color;
+  }
+}

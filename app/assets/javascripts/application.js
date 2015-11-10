@@ -40,3 +40,12 @@ $(window).on("load", function() {
 $(window).on('resize', Foundation.utils.throttle(function(e){
   SetSlidePanelPosition();
 }, 300));
+
+$(document).ready(function(){
+  $("#new_inquiry").on("ajax:success", function(e, data, status, xhr){
+    $(this)[0].reset();
+    $(".server-status-message").html("<span class='success'>Message sent, thanks for reaching out.</span>")
+  }).on("ajax:error", function(e, xhr, status, error){
+    $(".server-status-message").html('<span class="error">'+xhr.responseText+'</span>')
+  })
+})

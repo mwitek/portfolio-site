@@ -8,7 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
- 
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   display: inline-block;
@@ -23,7 +23,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
+
 .icon-mwitek-logo:before {
   content: '\e800';
+}
+
+.icon-linkedin-logo:before {
+  content: '\e801';
+}
+
+.icon-twitter-logo:before {
+  content: '\e802';
+}
+
+.icon-github-logo:before {
+  content: '\e803';
 }
