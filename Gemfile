@@ -10,6 +10,7 @@ gem "haml-rails", "~> 0.9"
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'
 gem 'foundation-rails'
 gem 'almost-flat-ui-rails'
+gem 'email_validator'
 
 group :development, :test do
   gem 'byebug'
