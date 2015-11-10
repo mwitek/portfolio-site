@@ -1,10 +1,18 @@
 .primary-panel {
-  background: $ruby image-url('mwitek-intro-bg.jpg') no-repeat center center fixed;
+  background: $ruby;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 5rem;
+  img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+  }
 }
 
 .primary-panel,
@@ -21,6 +29,13 @@
   line-height: 100%;
 }
 
+.medium-logo,
+.primary-panel__heading,
+.primary-panel__sub-heading,
+.secondary-panel {
+  position: relative;
+  z-index: 2;
+}
 .panel__heading {
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -119,6 +134,7 @@
 
 .project-gallery__item {
   -webkit-backface-visibility: hidden;
+  background: #013577;
   backface-visibility: hidden;
   border: 1px solid darken(#F9F5F1, 5%);
   cursor: pointer;
@@ -129,7 +145,6 @@
   text-align: center;
 
   &:hover {
-    background: #85181c;
     .project-gallery__image {
       opacity: 0.1
     }
