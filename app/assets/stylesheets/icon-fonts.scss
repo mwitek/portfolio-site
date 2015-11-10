@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'mwitek-icons';
-  src: url('mwitek-icons.eot');
-  src: url('mwitek-icons.eot#iefix') format('embedded-opentype'),
-       url('mwitek-icons.woff') format('woff'),
-       url('mwitek-icons.ttf') format('truetype'),
-       url('mwitek-icons.svg#mwitek-icons') format('svg');
+  src: font-url('/assets/mwitek-icons.eot');
+  src: font-url('/assets/mwitek-icons.eot#iefix') format('embedded-opentype'),
+       font-url('/assets/mwitek-icons.woff') format('woff'),
+       font-url('/assets/mwitek-icons.ttf') format('truetype'),
+       font-url('/assets/mwitek-icons.svg#mwitek-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
