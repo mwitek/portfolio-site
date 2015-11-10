@@ -4,7 +4,7 @@
     - @projects.each do |project|
       .columns.medium-6.large-4
         %figure.project-gallery__item
-          = image_tag project.image_url, class: 'project-gallery__image'
+          = image_tag 'portfolio-images/loading-slide.jpg', data: { src: "assets/#{project.image_url}"}, class: 'project-gallery__image'
           %figcaption.project-gallery__item-overlay-panel
             %h2.project-gallery__item-heading
               = project.name

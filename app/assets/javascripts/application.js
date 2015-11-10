@@ -13,5 +13,30 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require unviel
 //= require_tree .
 $(document).foundation();
+
+SetSlidePanelPosition = function(){
+  $('.project-gallery__item').each(function(index, item){
+    var $item = $(item);
+    var itemHeight = $item.height();
+    var titleHeight = $item.find('.project-gallery__item-overlay-panel').height();
+    var availableHeight = (itemHeight - titleHeight);
+    var descriptionHeight = $item.find('.project-gallery__item-description').height();
+    var paddingOffset = (availableHeight - descriptionHeight)/2 + 27;
+    $(item).find('.project-gallery__item-description').css('bottom', paddingOffset);
+  });
+};
+
+$(window).on("load", function() {
+  $("img").unveil(300, function() {
+    $(this).load(function() {
+      SetSlidePanelPosition();
+    });
+  });
+});
+
+$(window).on('resize', Foundation.utils.throttle(function(e){
+  SetSlidePanelPosition();
+}, 300));
