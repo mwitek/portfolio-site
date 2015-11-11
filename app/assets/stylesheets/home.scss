@@ -207,6 +207,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
+  width: 100%;
 }
 
 @media #{$large-up} {
