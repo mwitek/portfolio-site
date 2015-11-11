@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require unviel
+//= require touch-hover-to-link
 //= require_tree .
 $(document).foundation();
 
@@ -35,6 +36,7 @@ $(window).on("load", function() {
       SetSlidePanelPosition();
     });
   });
+  $('.project-gallery__item').touchHoverToLink()
 });
 
 $(window).on('resize', Foundation.utils.throttle(function(e){

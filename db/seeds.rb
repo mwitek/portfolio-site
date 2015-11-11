@@ -23,7 +23,7 @@ projects = [
   },
   {
     name: "Bespoke Offers",
-    description: "I worked on various features ranging from the client side angular
+    description: "I worked on various features ranging from the client side angularJS
                   shopping basket to encrypting and archiving files via background
                   jobs.",
     url: "https://www.bespokeoffers.co.uk/",
@@ -39,9 +39,9 @@ projects = [
   },
   {
     name: "Phelans",
-    description: "I added a polymorphic model for images and another for addresses,
-                  geocoding to project locations and a custom google map to display
-                  the locations.",
+    description: "I added a polymorphic model for images, another for addresses,
+                  geocoding to project locations, and a custom google map to
+                  display the locations.",
     url: "http://www.phelans.co.uk/",
     position: 6
   },
@@ -56,7 +56,7 @@ projects = [
   {
     name: "Love Pleasure",
     description: "I created a product csv import service which allowed the admin
-                  to create spree commerce products in bulk with ease",
+                  to create spree commerce products in bulk with ease.",
     url: "#no-url-available",
     position: 5
   },
@@ -113,7 +113,7 @@ projects = [
   {
     name: "Node Coffee Haml Server",
     description: "A boilerplate project I set up to get up and running fast with
-                  gulp, browserify, haml, jade, sass, coffeescript, and foundation",
+                  gulp, browserify, haml, jade, sass, coffeescript, and foundation.",
     url: "https://github.com/mwitek/node-coffee-haml-server/commits/master?author=mwitek",
     position: 9
   },
@@ -146,7 +146,7 @@ projects = [
   },
   {
     name: "jQuery - Touch Hover Link",
-    description: "A jQuery plugin to handle touch events on a dropdown menus top level link",
+    description: "A jQuery plugin to handle touch/hover events on links.",
     url: "https://github.com/red-green-refactor/touch-hover-to-link/commits/master?author=mwitek",
     position: 17
   }

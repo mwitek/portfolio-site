@@ -24,7 +24,7 @@
 .primary-panel__heading,
 .panel__heading {
   font-family: 'Roboto Slab';
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 100%;
 }
@@ -36,6 +36,7 @@
   position: relative;
   z-index: 2;
 }
+
 .panel__heading {
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -43,24 +44,49 @@
 
 .primary-panel__sub-heading {
   font-family: 'Roboto';
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
 .medium-logo {
-  font-size: 24rem;
+  font-size: 18rem;
   margin: -2rem 0 -3rem;
+}
+@media #{$large-up} {
+  .medium-logo {
+    font-size: 24rem;
+  }
 }
 
 .secondary-panel {
   background: white;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-family: 'Merriweather';
   padding: 4rem 0;
 }
 
 .intro-panel {
-  padding: 8rem 0;
+  padding: 4rem 0;
+}
+
+@media #{$medium-up} {
+  .primary-panel__heading,
+  .panel__heading {
+    font-size: 4rem;
+  }
+  
+  .primary-panel__sub-heading {
+    font-size: 1.75rem;
+  }
+  
+  .intro-panel {
+    padding: 8rem 0;
+  }
+  
+  .secondary-panel {
+    font-size: 1.75rem;
+    padding: 3rem 0;
+  }
 }
 
 .background-highlight {
@@ -134,10 +160,10 @@
 
 .project-gallery__item {
   -webkit-backface-visibility: hidden;
-  background: #013577;
+  background: #001648;
   backface-visibility: hidden;
   border: 1px solid darken(#F9F5F1, 5%);
-  cursor: pointer;
+  cursor: default;
   float: left;
   margin: 0;
   overflow: hidden;
@@ -146,7 +172,7 @@
 
   &:hover {
     .project-gallery__image {
-      opacity: 0.1
+      opacity: 0.1;
     }
 
     .project-gallery__item-heading {
@@ -171,6 +197,7 @@
   bottom: 100%;
   color: #fff;
   font-size: 1.25rem;
+  left: 0;
   line-height: 150%;
   opacity: 0;
   padding: 0.85rem;
@@ -183,6 +210,12 @@
 }
 
 @media #{$large-up} {
+  .project-gallery__item-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
   .project-gallery__item-description {
     font-size: 0.85rem;
   }
@@ -205,9 +238,9 @@
 }
 
 .work-experience__item {
-  padding-bottom: 0.5rem;
   border-bottom: 1px dashed darken(#F9F5F1, 10%);
   margin-bottom: 1.5rem;
+  padding: 0 1.5rem 0.5rem;
 
   &:last-child {
     border-bottom: none;
@@ -216,6 +249,7 @@
 
 .new_inquiry {
   margin-bottom: 6rem;
+  padding: 0 1.5rem;
 
   label {
     font-size: 0.85rem;

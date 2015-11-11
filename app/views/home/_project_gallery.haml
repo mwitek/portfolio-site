@@ -3,11 +3,11 @@
   .row.project-gallery
     - @projects.each do |project|
       .columns.medium-6.large-4
-        = link_to project.url, target: '_blank' do
-          %figure.project-gallery__item
-            = image_tag 'portfolio-images/loading-slide.jpg', data: { src: "assets/#{project.image_url}"}, class: 'project-gallery__image'
-            %figcaption.project-gallery__item-overlay-panel
-              %h2.project-gallery__item-heading
-                = project.name
-              %p.project-gallery__item-description
-                = project.description
+        %figure.project-gallery__item
+          = image_tag 'portfolio-images/loading-slide.jpg', data: { src: "assets/#{project.image_url}"}, class: 'project-gallery__image'
+          %figcaption.project-gallery__item-overlay-panel
+            %h2.project-gallery__item-heading
+              = link_to project.name, project.url, target: '_blank'
+            %p.project-gallery__item-description
+              = project.description
+                
