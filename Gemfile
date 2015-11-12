@@ -12,6 +12,7 @@ gem 'foundation-rails'
 gem 'almost-flat-ui-rails'
 gem 'email_validator'
 gem 'responders', '~> 2.0'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'byebug'
