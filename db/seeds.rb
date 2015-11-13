@@ -140,7 +140,7 @@ projects = [
   },
   {
     name: "jQuery - Image Rotator",
-    description: "A jQuery plugin for rotating images in random order",
+    description: "A jQuery plugin for rotating images in random order.",
     url: "https://github.com/mwitek/jQuery-ezRandomImageRotator/commits/master?author=mwitek",
     position: 20
   },
