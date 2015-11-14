@@ -1,17 +1,21 @@
 .primary-panel {
-  background: $ruby;
+  background: $ruby image-url('mwitek-intro-bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 5rem;
-  img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
+}
+
+@media #{$small-only} {
+  .primary-panel {
+    background-position: -190px 0;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  .primary-panel {
+    background-position: -325px 0;
   }
 }
 
